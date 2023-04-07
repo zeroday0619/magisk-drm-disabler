@@ -13,10 +13,7 @@
 # --------------------------------------------------
 keytest() 
 {
-    ui_print "- Vol Key Test -"
-    ui_print "   Press Vol Up:"
-    (/system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > "$TMPDIR"/events) || return 1
-    return 0
+    return 1
 }
 
 choose() 
